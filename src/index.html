@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shopping List</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="icon" href="assets/images/cartIcon.png">
+</head>
+<body>
+  <app-root></app-root>
+  <div>
+  	<button class="btn btn-info btnUp">˄</button>
+  </div>
+  <script>
+  	var btn = document.querySelector('.btnUp').addEventListener('click',function() {
+  		scrollToTop(300);
+  	})
+
+  	function scrollToTop(scrollDuration) {
+  	    var scrollStep = -window.scrollY / (scrollDuration / 15),
+  	        scrollInterval = setInterval(function(){
+  	        if ( window.scrollY != 0 ) {
+  	            window.scrollBy( 0, scrollStep );
+  	        }
+  	        else clearInterval(scrollInterval); 
+  	    },15);
+  	}
+  </script>
+</body>
+</html>

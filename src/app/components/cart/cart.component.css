@@ -1,0 +1,191 @@
+.header {
+    height: 6rem;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: lightgrey;
+    z-index: 99;
+    box-shadow: 5px 7px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'cursive';
+    font-size: 4vw;
+}
+
+#shoppingCartContainer {
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+    animation: slowHideAndShow 1s;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: url('http://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-022.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hideAndShow {
+    display: none !important;
+}
+
+@keyframes slowHideAndShow {
+    from {
+        opacity: 0;
+        transform: rotate(15deg);
+        margin-top: -5rem;
+        transform: scale(.5);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#productImage {
+	width: 50%;
+}
+
+.cart {
+    width: 100%;
+}
+
+
+.shoppingCart {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-image: url("/assets/images/cart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 0;
+    left: 1rem;
+
+}
+
+.cartProduct {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: lightgrey;
+    margin-bottom: 1rem;
+}
+
+.cartProduct img {
+    width: 10%;
+    padding: .2rem;
+}
+
+.cartHeaderDiv {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.substractBtnDiv {
+    margin-left: 1rem;
+}
+
+.orderBtnDiv {
+    margin-bottom: 1rem;
+}
+
+.substractBtn {
+    border-radius: 50%;
+    transform: scale(.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.shoppingCart span {
+    padding: .2rem;
+    display: block;
+    color: white;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    background-color: #4682B4;
+    border-radius: 50%;
+
+}
+
+table {
+    text-align: center;
+    border-bottom-left-radius: 10px;
+}
+
+tr:nth-child(even) {
+    background: #B0C4DE;
+}
+
+tr:nth-child(odd) {
+    background: #87CEFA;
+}
+
+
+.table td,th {
+    padding: .3rem;
+
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: 520px) {
+    .shoppingCart {
+        background-size: 60%;
+    }
+
+    .header {
+        height: 4rem;
+    }
+
+    .cartProduct {
+        width: 100%;
+    }
+
+    .shoppingCart span {
+        transform: scale(.6);
+        margin-right: 3.5rem;
+        margin-bottom: 3.5rem;
+
+    }
+
+    .substractBtn {
+        transform: scale(.7);
+    }
+
+    table {
+        transform: scale(.7);
+    }
+}
