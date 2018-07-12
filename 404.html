@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shopping List</title>
+  <base href="https://omriknight9.github.io/angular-shopping-list/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="icon" href="assets/images/cartIcon.png">
+<link rel="stylesheet" href="styles.5feb2cacaea0bbb2bcdb.css"></head>
+<body>
+  <app-root></app-root>
+  <div>
+  	<button class="btn btn-info btnUp">˄</button>
+  </div>
+  <script>
+  	var btn = document.querySelector('.btnUp').addEventListener('click',function() {
+  		scrollToTop(300);
+  	})
+
+  	function scrollToTop(scrollDuration) {
+  	    var scrollStep = -window.scrollY / (scrollDuration / 15),
+  	        scrollInterval = setInterval(function(){
+  	        if ( window.scrollY != 0 ) {
+  	            window.scrollBy( 0, scrollStep );
+  	        }
+  	        else clearInterval(scrollInterval); 
+  	    },15);
+  	}
+  </script>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="scripts.806effac119676237f10.js"></script><script type="text/javascript" src="main.2ea8de202d49ef06d2e6.js"></script></body>
+</html>
