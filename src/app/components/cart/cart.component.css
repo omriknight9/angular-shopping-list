@@ -61,6 +61,20 @@ h1 {
     width: 100%;
 }
 
+.totalPrice {
+    background-color: lightgrey;
+    width: 80%;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding: .7rem;
+}
+
+.totalPrice span {
+    font-weight: bold;
+}
+
+
 
 .shoppingCart {
     position: fixed;

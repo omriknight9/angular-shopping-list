@@ -9,7 +9,7 @@ import { DataService } from '../../services/data-service.service';
   	<p>{{product.name}}</p>
   	<img id="productImage" src="{{product.image}}">
   	<p>Price: {{product.price}} $</p>
-  	<p>Quantity: {{product.count}}</p>
+  	<p id="quantity">Quantity: {{product.count}}</p>
   </div>
   `,
   styleUrls: ['./product.component.css']

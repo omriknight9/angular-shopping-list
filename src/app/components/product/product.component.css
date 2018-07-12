@@ -14,6 +14,10 @@
 	height: 150px;
 }
 
+#quantity {
+	font-weight: bold;
+}
+
 @media screen and (max-width: 520px) {
 	.product {
 		

@@ -2,7 +2,7 @@
 	<div class="shoppingCart" (click)="showShoppingList()">
 		<span>{{quantity}}</span>
 	</div>
-	<h1>Omri's Shopping List</h1>
+	<h1>My Shopping List</h1>
 </div>
 <div class="container hideAndShow" id="shoppingCartContainer">
 	<h2>Shopping Cart</h2>
@@ -27,6 +27,9 @@
 		<div class="substractBtnDiv">
 			<button class="btn btn-info substractBtn" (click)="substract(product.count, i)">-</button>
 		</div>
+	</div>
+	<div class="totalPrice">
+		<span>Total Price: {{totalPrice}} $</span>
 	</div>
 	<div class="orderBtnDiv">
 		<button class="btn btn-dark orderBtn" (click)="order()">Order</button>
